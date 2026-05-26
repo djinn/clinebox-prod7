@@ -1,0 +1,25 @@
+#!/bin/bash
+
+# ClineBox Welcome Banner
+
+echo ""
+echo "╔══════════════════════════════════════════╗"
+echo "║           ◇ ClineBox ◇                  ║"
+echo "║  AI Coding Workspace on Cloudflare      ║"
+echo "╚══════════════════════════════════════════╝"
+echo ""
+echo "  \"This is going to be mad lit.\""
+echo "    — anonymous, gen alpha"
+echo ""
+echo "  Quick Start:"
+echo ""
+echo "    clinebox"
+echo ""
+echo "  Doctor:"
+echo ""
+echo "    clinebox-doctor"
+echo ""
+echo "  Workspace: /workspace"
+echo ""
+echo "════════════════════════════════════════════"
+echo ""

@@ -1,0 +1,39 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+
+  "name": "clinebox-prod7",
+
+  "main": "src/index.ts",
+
+  "compatibility_date": "2026-05-21",
+
+  "containers": [
+    {
+      "class_name": "ClineBox",
+      "image": "./Dockerfile",
+      "max_instances": 5,
+      "instance_type": "basic"
+    }
+  ],
+
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "CLINEBOX",
+        "class_name": "ClineBox"
+      }
+    ]
+  },
+
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["ClineBox"]
+    }
+  ],
+
+  "vars": {
+    "CLINEBOX_IDLE_TIMEOUT": "2h",
+    "CLINEBOX_ALLOW_DIRECT_MODEL_CALLS": "false"
+  }
+}
